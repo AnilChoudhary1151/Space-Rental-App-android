@@ -27,6 +27,6 @@ class Splash_activity : AppCompatActivity() {
             val selectRole = Intent(this, TypeOfUser_activity::class.java)
             startActivity(selectRole)
             finish()
-        }, 5000)
+        }, 4000)
     }
 }
