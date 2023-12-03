@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "298256216462",
+    "project_id": "spacerentalapp-5b7f6",
+    "storage_bucket": "spacerentalapp-5b7f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298256216462:android:18c404e9d45ea445cdb4df",
+        "android_client_info": {
+          "package_name": "com.example.project_final"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnq29cJe6S1f2YpoubHadBcDVgYPyXjOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

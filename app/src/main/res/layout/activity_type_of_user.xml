@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TypeOfUser_activity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/center_horizontal_ref_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/select_role_txt"
+        android:textColor="@color/black"
+        android:textSize="40sp">
+    </TextView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_admin"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_above="@+id/center_horizontal_ref_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-20dp"
+        app:cardBackgroundColor="@color/grey_overlay"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true">
+
+        <ImageView
+            android:id="@+id/id_typeofuser_admin_icon"
+            android:layout_width="218dp"
+            android:layout_height="181dp"
+            android:layout_gravity="center"
+            android:src="@drawable/admin">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:text="@string/admin_txt"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_user"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/center_horizontal_ref_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/grey_overlay"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/id_typeofuser_user_icon"
+            android:layout_width="166dp"
+            android:layout_height="153dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:text="@string/user_txt"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
