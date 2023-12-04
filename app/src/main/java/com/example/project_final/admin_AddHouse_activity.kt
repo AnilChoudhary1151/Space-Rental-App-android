@@ -82,6 +82,7 @@ class admin_AddHouse_activity : AppCompatActivity() {
 
         // Set up add house button listener
         addHouseBtn.setOnClickListener {
+            addHouseBtn.isEnabled=false
             val mname = name.text.toString()
             val mnumber = number.text.toString()
             val mrent = rent.text.toString()
@@ -108,21 +109,21 @@ class admin_AddHouse_activity : AppCompatActivity() {
                     }.addOnCompleteListener { task ->
                         if (task.isSuccessful) {
                             val downloadUri = task.result
-                            val house1 = House1(mname, mnumber, mrent, selectedCity, downloadUri.toString())
+                            val house1 = House1(null,mname, mnumber, mrent, selectedCity, downloadUri.toString())
                             reference.child(houseId).setValue(house1)
 
                             // Show success message
-                            Toast.makeText(this, "House added successfully", Toast.LENGTH_SHORT).show()
-
+                            Toast.makeText(this, "House added successfully", Toast.LENGTH_LONG).show()
+                            finish()
                             // Reset all fields
-                            name.setText("")
-                            number.setText("")
-                            rent.setText("")
-                            citySpinner.setSelection(0)
-                            uploadImageButton.setImageResource(R.drawable.upload)
-
-                            // Clear the imageUri
-                            imageUri = null
+//                            name.setText("")
+//                            number.setText("")
+//                            rent.setText("")
+//                            citySpinner.setSelection(0)
+//                            uploadImageButton.setImageResource(R.drawable.upload)
+//
+//                            // Clear the imageUri
+//                            imageUri = null
                         }
                     }
                 }
